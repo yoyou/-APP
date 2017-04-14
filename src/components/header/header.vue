@@ -185,6 +185,7 @@
       overflow: hidden
       text-overflow: ellipsis
       padding: 0 22px 0 12px
+      position: relative
       background-color: rgba(7, 17, 27, 0.2)
       #noticeIcon
         display: inline-block
