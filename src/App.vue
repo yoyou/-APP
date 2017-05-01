@@ -7,15 +7,18 @@
       <router-link class="tabitem" to="/seller">商家</router-link>
     </div>
     <router-view></router-view>
+    <shopcart :seller="seller"></shopcart>
   </div>
 </template>
 
 <script>
-  import header from './components/header/header.vue';
+  import header from './components/header/header';
+  import shopcart from './components/shopCart/shopCart';
 
   export default {
     components: {
-      'v-header': header
+      'v-header': header,
+      shopcart
     },
     data () {
       return {

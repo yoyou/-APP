@@ -16,6 +16,7 @@ Vue.use(VueResource);
 /* eslint-disable no-new */
 
 const routes = [
+  {path: '/', redirect: '/goods'},
   {path: '/goods', component: goods},
   {path: '/ratings', component: ratings},
   {path: '/seller', component: seller}
@@ -23,14 +24,12 @@ const routes = [
 
 const router = new VueRouter(
   {routes, linkActiveClass: 'active'}
-  );
+);
 
-router.go(1);
-
-const app = new Vue({
+new Vue({
+  el: '#app',
   components: {App},
   router,
   template: '<App></App>'
 });
 
-app.$mount('#app');

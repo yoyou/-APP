@@ -213,6 +213,7 @@
     height 100%
     background-color: rgba(7, 17, 27, 0.8)
     z-index :100
+    overflow auto
     .wrap
       min-height 100%
       height: auto
@@ -286,10 +287,8 @@
       height: 32px
       font-size: 32px
       margin:-64px auto 0px auto
-  .fade-enter-active, .fade-leave-active {
+  .fade-enter-active, .fade-leave-active
     transition: opacity .5s
-  }
-  .fade-enter, .fade-leave-active {
+  .fade-enter, .fade-leave-active
     opacity: 0
-  }
 </style>
